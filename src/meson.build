@@ -7,6 +7,7 @@ sources = [
 	'instruments/generico.cpp',
 	'instruments/perc.cpp',
 	'instruments/sample.cpp',
+	'instruments/FM.cpp',
 	'synth/envelope_adsr.cpp',
 	'synth/midi_score.cpp',
 	'synth/multinote_instr.cpp',

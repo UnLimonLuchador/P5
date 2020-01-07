@@ -1,0 +1,1 @@
+1  perc	ADSR_A=0.02; ADSR_D=0.5; ADSR_S=0; ADSR_R=0.5; N=40;

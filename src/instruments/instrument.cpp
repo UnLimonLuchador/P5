@@ -4,6 +4,7 @@
 #include "generico.h"
 #include "perc.h"
 #include "sample.h"
+#include "FM.h"
 
 
 /*
@@ -34,6 +35,9 @@ namespace upc {
     }
     if (name == "sample") {
       pInst = (Instrument *) new sample(parameters);
+    }
+    if (name == "FM") {
+      pInst = (Instrument *) new FM(parameters);
     }
     return pInst;
   }
