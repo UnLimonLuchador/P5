@@ -29,7 +29,7 @@ visualizar el funcionamiento de la curva ADSR.
   ataque (A), caída (D), mantenimiento (S) y liberación (R).
 
     ### GENÉRICA
-<img src="images/curva_asdr_generica.png" width="640" align="center">
+<img src="images/curva_asdr_generica.PNG" width="640" align="center">
 
 
       #### Parámetros
@@ -48,7 +48,7 @@ visualizar el funcionamiento de la curva ADSR.
 
       ### PERCUSIVO I y PERCUSIVO II
 
-    <img src="images/percusivo_2_finales.png" width="640" align="center">
+    <img src="images/percusivo_2_finales.PNG" width="640" align="center">
 
 
    #### Parámetros
@@ -63,7 +63,7 @@ visualizar el funcionamiento de la curva ADSR.
   es bastante rápida.
 
     ### PLANA
-  <img src="images/instrumento_plano.png" width="640" align="center">
+  <img src="images/instrumento_plano.PNG" width="640" align="center">
 
 
    #### Parámetros
@@ -166,9 +166,9 @@ const vector<float> & Seno::synthesize() {
   Para asignar un valor a partir de la tabla, se ha recorrido a una velocidad definida por la nota que queramos tocar. Al no ser siempre la velocidad multiplo de la frecuencia de la tabla original, nos encontraremos queriendo acceder a indices no enteros de la tabla, por lo que utilizaremos la interpolación para solucionarlo.
   <img src="images/interpolacion.png" width="640" align="center">
   
-  <img src="images/note60.png" width="640" align="center">
+  <img src="images/note60.PNG" width="640" align="center">
     Do 440 Hz
-  <img src="images/note62.png" width="640" align="center">
+  <img src="images/note62.PNG" width="640" align="center">
     Do 523 Hz
 
  Ambas graficas estan a la misma escala
@@ -265,11 +265,11 @@ const vector<float> & Seno::synthesize() {
   la señal generada (se valorará que la explicación esté contenida en las propias gráficas, sin necesidad de
   *literatura*).
 
-<img src="images/tremolo.png" width="640" align="center">
+<img src="images/tremolo.PNG" width="640" align="center">
 
    Se puede observar como el tremolo es simplemente una modulacion de la amplitud
 
-<img src="images/vibrato.png" width="640" align="center">
+<img src="images/vibrato.PNG" width="640" align="center">
 
    En el caso de el vibrato, al tratarse de una modulacion frecuencial cuesta observarlo a nivel temporal.
 
