@@ -164,7 +164,7 @@ const vector<float> & Seno::synthesize() {
   señal generada.
 
   Para asignar un valor a partir de la tabla, se ha recorrido a una velocidad definida por la nota que queramos tocar. Al no ser siempre la velocidad multiplo de la frecuencia de la tabla original, nos encontraremos queriendo acceder a indices no enteros de la tabla, por lo que utilizaremos la interpolación para solucionarlo.
-  <img src="images/interpolacion.PNG" width="640" align="center">
+  <img src="images/interpolacion.png" width="640" align="center">
   
   <img src="images/note60.PNG" width="640" align="center">
     Do 440 Hz
