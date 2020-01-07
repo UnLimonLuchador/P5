@@ -2,10 +2,14 @@
 #include <vector>
 #include <sndfile.h>
 #include "wavfile_mono.h"
+#include <iostream>
+
 
 using namespace std;
 
 int readwav_mono(const string &filename, unsigned int &sampling_freq, vector<float> &x) {
+  //cout << "------LEYENDO FICHERO .WAV---------" << endl;
+
   /** 
   Read input filename and returns sampling_freq and samples
   Input file should be mono
@@ -15,18 +19,23 @@ int readwav_mono(const string &filename, unsigned int &sampling_freq, vector<flo
   SF_INFO sf_info;
   x.clear();
   sampling_freq = 0;
-
+  
   sndfile_in = sf_open(filename.c_str(), SFM_READ, &sf_info);
-  if (sndfile_in == 0) //Error opening input file
+  if (sndfile_in == 0){ //Error opening input file
+    cout << "Readwav_mono: Error opening input file " << filename << endl;
     return -1;
+  }
 
-  if (sf_info.channels  != 1) //Only mono files supported!
+  if (sf_info.channels  != 1){//Only mono files supported!
+    cout << "Only mono files supported!" << endl;
+  
     return -2;
-
+  }
   x.resize(sf_info.frames);
 
   if(sf_read_float(sndfile_in, x.data(), x.size()) != (signed) x.size()) {
     //Error reading data
+    cout << "Error reading data" << endl;
     x.clear();
     return -3;
   }

@@ -1,5 +1,10 @@
 #include <iostream>
+#include "seno.h"
 #include "instrument_dumb.h"
+#include "generico.h"
+#include "perc.h"
+#include "sample.h"
+
 
 /*
   For each new instrument:
@@ -18,6 +23,19 @@ namespace upc {
     if (name == "InstrumentDumb") {
       pInst = (Instrument *) new InstrumentDumb(parameters);
     }
+    if (name == "seno") {
+      pInst = (Instrument *) new Seno(parameters);
+    }
+    if (name == "generico") {
+      pInst = (Instrument *) new generico(parameters);
+    }
+    if (name == "perc") {
+      pInst = (Instrument *) new perc(parameters);
+    }
+    if (name == "sample") {
+      pInst = (Instrument *) new sample(parameters);
+    }
     return pInst;
   }
+  
 }
