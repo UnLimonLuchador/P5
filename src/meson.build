@@ -3,6 +3,10 @@
 sources = [
 	'instruments/instrument.cpp',
 	'instruments/instrument_dumb.cpp',
+	'instruments/seno.cpp',
+	'instruments/generico.cpp',
+	'instruments/perc.cpp',
+	'instruments/sample.cpp',
 	'synth/envelope_adsr.cpp',
 	'synth/midi_score.cpp',
 	'synth/multinote_instr.cpp',
