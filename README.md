@@ -168,7 +168,7 @@ const vector<float> & Seno::synthesize() {
   
   <img src="images/note60.PNG" width="640" align="center">
     Do 440 Hz
-  <img src="images/note62.PNG" width="640" align="center">
+  <img src="images/note72.PNG" width="640" align="center">
     Do 523 Hz
 
  Ambas graficas estan a la misma escala
